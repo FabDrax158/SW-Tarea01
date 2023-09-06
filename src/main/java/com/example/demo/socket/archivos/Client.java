@@ -18,7 +18,7 @@ public class Client {
 			System.out.println("------------- 1 Iniciando Comunicación ---------------");
 			System.out.println("Inet Address : " + clientSocket.getInetAddress());
 			
-			File fileOrigen = new File("D:/cliente/Java-Jacinto.png");
+			File fileOrigen = new File("C:/cliente/javalogo.jfif");
 			FileInputStream fis = new FileInputStream(fileOrigen);
 			DataOutputStream salida = new DataOutputStream(clientSocket.getOutputStream());
 			
@@ -26,8 +26,6 @@ public class Client {
 			while ( (byteLeidos = fis.read())!= -1) {
 				salida.write(byteLeidos);
 			}
-		
-			
 			fis.close();
 			salida.close();
 			
