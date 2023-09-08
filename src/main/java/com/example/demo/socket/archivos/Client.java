@@ -11,7 +11,6 @@ public class Client {
 
 	private final Integer PORT = 13;
 	private final String IP = "localhost";
-	
 	public Client() {
 		try {
 			Socket clientSocket = new Socket(IP, PORT);

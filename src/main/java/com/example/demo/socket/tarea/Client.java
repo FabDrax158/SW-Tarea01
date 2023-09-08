@@ -1,4 +1,4 @@
-package com.example.demo.tarea;
+package com.example.demo.socket.tarea;
 
 import java.io.DataInputStream;
 import java.io.File;
